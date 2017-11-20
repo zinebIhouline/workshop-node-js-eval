@@ -10,7 +10,10 @@ const inputs = [
     { multiply: false, value: 7 },
     { multiply: true, value: 5 },
     { multiply: true, value: 9 }
-  ]
+  ],
+  function(a, b, c) {
+    return c(a, b);
+  }
 ];
 
 if (!Number.isInteger(parseInt(numExercise))) {

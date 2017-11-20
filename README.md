@@ -101,6 +101,10 @@ After finish this exercise, please commit this file.
 
 Your program must be written into the file **src/exercise4.js_** into the function +run+.
 
+Be careful, some code is already present for this exercise, it's strictly forbidden to change this code.
+
+This function should return a particular string : "Beetlejuice, Beetlejuice, Beetlejuice".
+
 After finish this exercise, please commit this file.
 
 	src/exercise4.js
