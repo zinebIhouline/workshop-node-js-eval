@@ -72,7 +72,24 @@ After finish this exercise, please commit this file.
 
 ### Exercise 3
 
-Your program must be written into the file **src/exercise3.js_**
+Your program must be written into the file **src/exercise3.js_** into the function +run+.
+
+This function should return (a number) which is the multiplication of the values of objects where the property +multiply+ is true.
+
+```javascript
+// For example
+run([
+  { multiply: true, value: 2 },
+  { multiply: false, value: 5 },
+  { multiply: true, value: 3 }
+]) // 6
+run([
+  { multiply: false, value: 2 },
+  { multiply: false, value: 5 },
+  { multiply: true, value: 7 },
+  { multiply: true, value: 3 },
+]) // 21
+```
 
 After finish this exercise, please commit this file.
 
@@ -82,7 +99,7 @@ After finish this exercise, please commit this file.
 
 ### Exercise 4
 
-Your program must be written into the file **src/exercise4.js_**
+Your program must be written into the file **src/exercise4.js_** into the function +run+.
 
 After finish this exercise, please commit this file.
 
@@ -92,7 +109,7 @@ After finish this exercise, please commit this file.
 
 ### Exercise 5
 
-Your program must be written into the file **src/exercise5.js_**
+Your program must be written into the file **src/exercise5.js_** into the function +run+.
 
 After finish this exercise, please commit this file.
 
