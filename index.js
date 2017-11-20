@@ -1,6 +1,17 @@
-let chalk = require("chalk");
+const chalk = require("chalk");
 
-let numExercise = process.argv[2] || 1;
+const numExercise = process.argv[2] || 1;
+
+const inputs = [
+  "it sounds good !",
+  "15843",
+  [
+    { multiply: true, value: 4 },
+    { multiply: false, value: 7 },
+    { multiply: true, value: 5 },
+    { multiply: true, value: 9 }
+  ]
+];
 
 if (!Number.isInteger(parseInt(numExercise))) {
   console.log(
@@ -20,18 +31,19 @@ if (numExercise <= 0 || numExercise > 5) {
   return;
 }
 
+const exercise = require(`./src/exercise${numExercise}`);
+const input = inputs[numExercise - 1];
+
 console.log(
   chalk.yellow(`
-    Exercise #${numExercise} is running ...
+    Exercise #${numExercise} is running with input ${chalk.cyan.bold(input)}
   `)
 );
 
-const exercise = require(`./src/exercise${numExercise}`);
-
-const output = exercise.run();
+const output = exercise.run(input);
 
 console.log(
   chalk.green(`
-    Exercise #${numExercise} finished with value ${output}
+    Exercise #${numExercise} finished with value ${chalk.cyan.bold(output)}
   `)
 );

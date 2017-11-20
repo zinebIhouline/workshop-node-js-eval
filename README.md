@@ -32,7 +32,16 @@ Please verify that after all exercises the tests and the linter should not retur
 
 ### Exercise 1
 
-Your program must be written into the file **src/exercise1.js_**
+Your program must be written into the file **src/exercise1.js_** into the function +run+.
+
+This function should return the parameter given in input but in a uppercase way.
+
+```javascript
+// For example
+run('Hello you') // HELLO YOU
+```
+
+:point_right: [function `.toUpperCase`](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String/toUpperCase) should help you.
 
 After finish this exercise, please commit this file.
 
