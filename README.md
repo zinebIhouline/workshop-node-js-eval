@@ -28,8 +28,6 @@ To start program.
 
 ## Exercises
 
-Please verify that after all exercises the tests and the linter should not return errors.
-
 ### Exercise 1
 
 Your program must be written into the file **src/exercise1.js_** into the function +run+.
@@ -51,7 +49,7 @@ After finish this exercise, please commit this file.
 
 ### Exercise 2
 
-Your program must be written into the file **src/exercise1.js_** into the function +run+.
+Your program must be written into the file **src/exercise2.js_** into the function +run+.
 
 This function should return (a number) the biggest number of the string input considering only one character.
 
