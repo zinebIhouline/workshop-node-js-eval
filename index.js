@@ -13,6 +13,12 @@ const inputs = [
   ],
   function(a, b, c) {
     return c(a, b);
+  },
+  {
+    directory: "test",
+    showInProgress: () => "In progress ...",
+    showError: () => "Something goes wrong",
+    showDone: number => `Project contains ${number} file(s) of tests`
   }
 ];
 

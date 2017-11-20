@@ -38,7 +38,7 @@ This function should return the parameter given in input but in a uppercase way.
 
 ```javascript
 // For example
-run('Hello you') // HELLO YOU
+run('Hello you') // "HELLO YOU"
 ```
 
 :point_right: [function `.toUpperCase`](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String/toUpperCase) should help you.
@@ -114,6 +114,23 @@ After finish this exercise, please commit this file.
 ### Exercise 5
 
 Your program must be written into the file **src/exercise5.js_** into the function +run+.
+
+This function should return a string which indicates number of files in a directory with a particular message.
+
+To do this you should absolutely use the asynchronous way.
+
+```javascript
+// For example
+run({
+	directory: "test",
+	showInProgress: () => "In progress ...",
+  showError: () => "Something goes wrong",
+  showDone: number => `Project contains ${number} file(s) of tests`
+}) // "Project contains 6 file(s) of tests"
+```
+
+
+:point_right: [function `.readdir`](https://nodejs.org/api/fs.html#fs_fs_readdir_path_options_callback) should help you.
 
 After finish this exercise, please commit this file.
 
