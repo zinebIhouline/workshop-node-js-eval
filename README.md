@@ -51,7 +51,18 @@ After finish this exercise, please commit this file.
 
 ### Exercise 2
 
-Your program must be written into the file **src/exercise2.js_**
+Your program must be written into the file **src/exercise1.js_** into the function +run+.
+
+This function should return (a number) the biggest number of the string input considering only one character.
+
+```javascript
+// For example
+run('14725') // 7
+run('642356') // 6
+run('125') // 5
+```
+
+:point_right: [function `.split`](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String/split) should help you.
 
 After finish this exercise, please commit this file.
 
