@@ -16,9 +16,10 @@ const inputs = [
   },
   {
     directory: "test",
-    showInProgress: () => "In progress ...",
-    showError: () => "Something goes wrong",
-    showDone: number => `Project contains ${number} file(s) of tests`
+    showInProgress: () => console.log("In progress ..."),
+    showError: () => console.log("Something goes wrong"),
+    showDone: number =>
+      console.log(`Project contains ${number} file(s) of tests`)
   }
 ];
 
