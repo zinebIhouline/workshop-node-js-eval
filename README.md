@@ -16,10 +16,6 @@ To launch the tests.
 
 	npm test
 
-To lint sources.
-
-	npm run lint
-
 ### Start
 
 To start program.
