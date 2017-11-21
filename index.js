@@ -19,7 +19,11 @@ const inputs = [
     showInProgress: () => console.log("In progress ..."),
     showError: () => console.log("Something goes wrong"),
     showDone: number =>
-      console.log(`Project contains ${number} file(s) of tests`)
+      console.log(
+        chalk.magenta(`
+          Project contains ${number} file(s) of tests
+        `)
+      )
   }
 ];
 
