@@ -113,7 +113,7 @@ After finish this exercise, please commit this file.
 
 Your program must be written into the file **src/exercise5.js_** into the function +run+.
 
-This function should return a string which indicates number of files in a directory with a particular message.
+This function should log a string in the console which indicates number of files in a directory with a particular message.
 
 To do this you should absolutely use the asynchronous way.
 
@@ -121,12 +121,11 @@ To do this you should absolutely use the asynchronous way.
 // For example
 run({
 	directory: "test",
-	showInProgress: () => "In progress ...",
-  showError: () => "Something goes wrong",
-  showDone: number => `Project contains ${number} file(s) of tests`
-}) // "Project contains 6 file(s) of tests"
+	showInProgress: () => console.log("In progress ..."),
+  showError: () => console.log("Something goes wrong"),
+  showDone: number => console.log(`Project contains ${number} file(s) of tests`)
+}) // "Project contains 5 file(s) of tests"
 ```
-
 
 :point_right: [function `.readdir`](https://nodejs.org/api/fs.html#fs_fs_readdir_path_options_callback) should help you.
 
