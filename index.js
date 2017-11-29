@@ -6,25 +6,15 @@ const inputs = [
   "it sounds good !",
   "15843",
   [
-    { multiply: true, value: 4 },
-    { multiply: false, value: 7 },
-    { multiply: true, value: 5 },
-    { multiply: true, value: 9 }
+    { operator: 'add', value: 6 },
+    { operator: 'substract', value: 5 },
+    { operator: 'add', value: 9 },
+    { operator: 'add', value: 3 }
   ],
   function(a, b, c) {
-    return c(a, b);
+    return a(b, c);
   },
-  {
-    directory: "test",
-    showInProgress: () => console.log("In progress ..."),
-    showError: () => console.log("Something goes wrong"),
-    showDone: number =>
-      console.log(
-        chalk.magenta(`
-          Project contains ${number} file(s) of tests
-        `)
-      )
-  }
+  "exercise5-sample-1.txt"
 ];
 
 if (!Number.isInteger(parseInt(numExercise))) {

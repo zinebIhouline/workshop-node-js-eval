@@ -4,14 +4,15 @@ const exercise = require("../src/exercise3");
 
 describe("Exercise #3", function() {
   describe("function run()", function() {
-    it("should return (a number) which is the multiplication of the values of objects where the property +multiply+ is true", function() {
+    it("should return (a number) which is the result of the values of objects with specific operator mentionned in the property \"operator\"", function() {
       expect(
         exercise.run([
-          { multiply: true, value: 2 },
-          { multiply: false, value: 5 },
-          { multiply: true, value: 3 }
+          { operator: 'add', value: 2 },
+          { operator: 'add', value: 5 },
+          { operator: 'add', value: 7 },
+          { operator: 'substract', value: 3 },
         ])
-      ).to.be.eql(6);
+      ).to.be.eql(11);
     });
   });
 });

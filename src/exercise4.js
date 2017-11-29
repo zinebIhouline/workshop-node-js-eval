@@ -4,6 +4,6 @@ exports.run = function(input) {
   // YOUR CODE IS WELCOME HERE
 
   /** STRICTLY FORBIDDEN TO CHANGE THIS CODE */
-  return input(3, "Beetlejuice", repeat);
+  return input(myFunction, [1, 2, 3], ["One", "Two", "Three"]);
   /** */
 };

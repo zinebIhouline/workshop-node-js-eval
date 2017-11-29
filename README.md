@@ -1,6 +1,6 @@
-# workshop-node-js-noob
+# workshop-node-js-eval
 
-Workshop to learn the basics of Node.js.
+Workshop to evaluate students on the basics of Node.js.
 
 ## Commands
 
@@ -10,7 +10,7 @@ Please install dependencies first.
 
 	npm install
 
-### Tests & lint
+### Tests
 
 To launch the tests.
 
@@ -20,7 +20,7 @@ To launch the tests.
 
 To start program.
 
-	npm start
+	node index.js
 
 ## Exercises
 
@@ -28,14 +28,12 @@ To start program.
 
 Your program must be written into the file **_src/exercise1.js_** into the function `run`.
 
-This function should return the parameter given in input but in a uppercase way.
+This function should return the number of characters of the string given in input.
 
 ```javascript
 // For example
-run('Hello you') // "HELLO YOU"
+run('Hello you') // 9
 ```
-
-:point_right: function[`toUpperCase`](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String/toUpperCase) should help you.
 
 After finish this exercise, please commit this file.
 
@@ -47,13 +45,13 @@ After finish this exercise, please commit this file.
 
 Your program must be written into the file **_src/exercise2.js_** into the function `run`.
 
-This function should return (a number) the biggest number of the string input considering only one character.
+This function should return a string with only number under 6 of the string given in input.
 
 ```javascript
 // For example
-run('14725') // 7
-run('642356') // 6
-run('125') // 5
+run('14725') // 1425
+run('642356') // 4235
+run('125') // 125
 ```
 
 :point_right: function[`split`](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String/split) should help you.
@@ -68,21 +66,22 @@ After finish this exercise, please commit this file.
 
 Your program must be written into the file **_src/exercise3.js_** into the function `run`.
 
-This function should return (a number) which is the multiplication of the values of objects where the property `multiply` is true.
+This function should return (a number) which is the result of the values of objects with specific operator mentionned in the property "operator".
 
 ```javascript
-// For example
+// For example +2-4+3=1
 run([
-  { multiply: true, value: 2 },
-  { multiply: false, value: 5 },
-  { multiply: true, value: 3 }
-]) // 6
+  { operator: 'add', value: 2 },
+  { operator: 'substract', value: 4 },
+  { operator: 'add', value: 3 }
+]) // 1
+// For example +2+5+7-3=11
 run([
-  { multiply: false, value: 2 },
-  { multiply: false, value: 5 },
-  { multiply: true, value: 7 },
-  { multiply: true, value: 3 },
-]) // 21
+  { operator: 'add', value: 2 },
+  { operator: 'add', value: 5 },
+  { operator: 'add', value: 7 },
+  { operator: 'substract', value: 3 },
+]) // 11
 ```
 
 After finish this exercise, please commit this file.
@@ -97,7 +96,7 @@ Your program must be written into the file **_src/exercise4.js_** into the funct
 
 Be careful, some code is already present for this exercise, it's strictly forbidden to change this code.
 
-This function should return a particular string : "Beetlejuice, Beetlejuice, Beetlejuice".
+This function should return a particular string : "The value of One is 1, The value of Two is 2, The value of Three is 3".
 
 After finish this exercise, please commit this file.
 
@@ -109,21 +108,11 @@ After finish this exercise, please commit this file.
 
 Your program must be written into the file **_src/exercise5.js_** into the function `run`.
 
-This function **should log a string in the console** which indicates number of files in a directory with a particular message.
-
-To do this you should absolutely use the asynchronous way.
+This function should return (a number) which is the sum of the values written in the path given in input.
 
 ```javascript
-// For example
-run({
-  directory: "test",
-  showInProgress: () => console.log("In progress ..."),
-  showError: () => console.log("Something goes wrong"),
-  showDone: number => console.log(`Project contains ${number} file(s) of tests`)
-}) // "Project contains 5 file(s) of tests" appears into the console
+run("exercise5-sample-1.txt") // 30
 ```
-
-:point_right: function[`readdir`](https://nodejs.org/api/fs.html#fs_fs_readdir_path_options_callback) should help you.
 
 After finish this exercise, please commit this file.
 
