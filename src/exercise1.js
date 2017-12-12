@@ -1,3 +1,3 @@
-exports.run = function(input) {
-  console.log("Exercise #1");
+exports.run = (input) =>{
+return input.length;
 };
