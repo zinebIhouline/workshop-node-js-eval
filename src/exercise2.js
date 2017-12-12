@@ -1,3 +1,8 @@
-exports.run = function(input) {
-  console.log("Exercise #2");
+exports.run = (input)=> {
+ 
+ 
+ 
+ // console.log(input.split(n));
+ return
+  console.log(input.split(7));
 };
